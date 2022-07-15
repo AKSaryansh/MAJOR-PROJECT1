@@ -6,7 +6,6 @@ list = ['GRE Score','TOEFL Score','University Rating','SOP','LOR','CGPA','RESEAR
 list_for_input = []
 if st.button('Start'):
   for i in range(0,7):
-    if st.button('NEXT'):
       st.number_input(f'Enter your {list[i]}')
       list_for_input.append(st.number_input(f'Enter your {list[i]}'))
   
