@@ -6,10 +6,12 @@ list = ['GRE Score','TOEFL Score','University Rating','SOP','LOR','CGPA','RESEAR
 list_for_input = [1,2,3,4,5,6,7]
 if st.button('Start'):
   i = 0
+  count = 0
   while i<7:
     
-    list_for_input[i] = st.number_input(f'{list[i]}')
-    if st.button(f'LET US MOVE TO {list[i+1]}'):
+    list_for_input[i] = st.number_input(f'{list[i]}',key = count)
+    count+=1
+    if st.button('NEXT'):
       i +=1
       
 op = model.predict([list_for_input])
