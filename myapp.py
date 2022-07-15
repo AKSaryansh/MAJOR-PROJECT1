@@ -8,7 +8,7 @@ if st.button('Start'):
   i = 0
   while i<7:
     
-    list_for_input[i] = st.number_input(f'Enter your {list[i]}')
+    list_for_input[i] = st.number_input(f'{list[i]}')
     if st.button(f'LET US MOVE TO {list[i+1]}'):
       i +=1
       
