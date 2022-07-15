@@ -12,9 +12,7 @@ if st.button('Start'):
     
     list_for_input[i] = st.number_input(f'{list[i]}',key = count)
     count+=1
-    if st.button('NEXT',key = countprime):
-      i +=1
-    countprime+=1 
+
 op = model.predict([list_for_input])
 if st.button('SUBMIT!'):
   st.title(str(op[0]*100) + '%')
