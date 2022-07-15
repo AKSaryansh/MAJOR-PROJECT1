@@ -7,11 +7,13 @@ list_for_input = [1,2,3,4,5,6,7]
 if st.button('Start'):
   i = 0
   count = 0
+  countprime = 0
   while i<7:
     
     list_for_input[i] = st.number_input(f'{list[i]}',key = count)
     count+=1
-    if st.button('NEXT'):
+    if st.button('NEXT',key = countprime):
+      countprime+=1
       i +=1
       
 op = model.predict([list_for_input])
