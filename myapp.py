@@ -6,7 +6,9 @@ list = ['GRE Score','TOEFL Score','University Rating','SOP','LOR','CGPA','RESEAR
 list_for_input = [1,2,3,4,5,6,7]
 if st.button('Start'):
   for i in range(0,7):
-      list_for_input[i] = st.number_input(f'Enter your {list[i]}')
+    
+    list_for_input[i] = st.number_input(f'Enter your {list[i]}')
+    
       
   
 op = model.predict([list_for_input])
