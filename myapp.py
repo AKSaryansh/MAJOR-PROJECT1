@@ -19,4 +19,4 @@ if st.button('Next'):
 op = model.predict([[a1,a2,a3,a4,a5,a6,a7]])
 if st.button('SUBMIT!'):
   st.title(str(op[0]*100) + '%')
-  
+      
